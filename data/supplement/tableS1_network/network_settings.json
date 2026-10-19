@@ -1,0 +1,58 @@
+{
+ "table": "Table S1: settings of the two residual CNNs of Fig. S1",
+ "networks": {
+  "bottleneck": {
+   "used_by": [
+    "NN-fPEPS"
+   ],
+   "output_per_site": "C = 2 D^4 = 512 real elements of the parity-conserving site tensor T(n), D = 4",
+   "residual_block": "bottleneck",
+   "block": "x + Conv1x1[c->C](GELU(Conv3x3[c->c](GELU(Conv1x1[C->c](GELU(RMSNorm(x)))))))",
+   "width_C": 512,
+   "bottleneck_width_c": 128,
+   "weights_per_block": 278528,
+   "weights_per_block_formula": "2 C c + 9 c^2 (biases not included)",
+   "parameters": 4470784,
+   "receptive_field": [
+    33,
+    33
+   ]
+  },
+  "normal": {
+   "used_by": [
+    "BCS backflow",
+    "Pfaffian backflow"
+   ],
+   "output_per_site": "backflow features y_up(n), y_dn(n) of dimension d: d = 32 for the Pfaffian backflow (the two halves of the C channels), d = 64 for the BCS backflow (learned linear layer on all C channels)",
+   "residual_block": "normal",
+   "block": "x + Conv3x3[C->C](GELU(Conv3x3[C->C](GELU(RMSNorm(x)))))",
+   "width_C": 64,
+   "bottleneck_width_c": null,
+   "weights_per_block": 73728,
+   "weights_per_block_formula": "2 x 9 C^2 (biases not included)",
+   "parameters": "1.2 M; total of the backflow ansatz, depends on the ansatz and on L (see parameter_counts)",
+   "parameters_by_state": {
+    "tp0_L16_bcs": 1208320,
+    "tp0_L16_pfaffian": 1208320,
+    "tp0_L32_bcs": 1257472,
+    "tpm02_L16_pfaffian": 1208320,
+    "tpm02_L24_pfaffian": 1241088,
+    "tpm02_L32_pfaffian": 1282048
+   },
+   "receptive_field": [
+    65,
+    65
+   ]
+  }
+ },
+ "shared": {
+  "number_of_blocks": 16,
+  "embedding": "learned C-dimensional vector per site occupation (empty, up, down, double), shared by all sites",
+  "convolutions": "3x3 with circular padding for periodic boundaries, 1x1 in the bottleneck",
+  "nonlinearity": "GELU",
+  "normalization": "RMSNorm over all channels and sites, without learnable affine parameters",
+  "output_scaling": "output of the last block divided by sqrt(16 + 1)",
+  "initialization": "LeCun normal",
+  "arithmetic": "real-valued, float32 with TF32 in convolutions and matrix multiplications"
+ }
+}

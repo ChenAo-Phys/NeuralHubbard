@@ -1,0 +1,47 @@
+# Table S3: cost of one amplitude evaluation on one NVIDIA A100-SXM4-80GB GPU, L x L lattice at half filling (N = L^2)
+# t_us, F_MFLOP, F_over_t_TFLOPs, arithmetic, MFU_percent: as printed in the table
+# t_us_unrounded, F_MFLOP_unrounded: the same quantities before rounding; peak_TFLOPs: denominator of the MFU
+# (156 TF32, 19.5 FP32, 52 3xTF32; for mixed rows the time-weighted peak of the two sub-rows)
+# batch: number of configurations per call; time = call time / batch at a saturating batch
+# source: this work (Perlmutter, NERSC) or the fermix library benchmarks (determinant, Pfaffian)
+L,N,component,subcomponent,t_us,F_MFLOP,F_over_t_TFLOPs,arithmetic,MFU_percent,t_us_unrounded,F_MFLOP_unrounded,peak_TFLOPs,batch,source
+8,64,Determinant,,0.293,0.175,0.60,3xTF32,1.1,0.292969,0.174763,52,4096,fermix library benchmark
+8,64,Pfaffian,,0.322,0.0874,0.27,3xTF32,0.52,0.322266,0.0873813,52,4096,fermix library benchmark
+8,64,fPEPS,,4.24,58.1,13.7,mixed,13,4.24254,58.1,107.458,4096,this work
+8,64,fPEPS,HOTRG steps,1.50,2.75,1.83,FP32,9.4,1.50365,2.74712,19.5,4096,this work
+8,64,fPEPS,Final exact contraction,2.73,55.3,20.2,TF32,13,2.73444,55.3246,156,4096,this work
+8,64,fPEPS (trans),,8.32,116,14.0,mixed,13,8.32489,116.177,108.543,4096,this work
+8,64,fPEPS (trans),HOTRG steps,2.86,5.49,1.92,FP32,9.9,2.85742,5.4935,19.5,4096,this work
+8,64,fPEPS (trans),Final exact contraction,5.44,111,20.4,TF32,13,5.43516,110.649,156,4096,this work
+8,64,Bottleneck CNN,,14.9,579,39.0,TF32,25,14.86,578.947,156,32768,this work
+8,64,Normal CNN,,4.28,152,35.6,TF32,23,4.275,152.324,156,524288,this work
+16,256,Determinant,,3.64,11.2,3.07,3xTF32,5.9,3.64258,11.1848,52,4096,fermix library benchmark
+16,256,Pfaffian,,3.39,5.59,1.65,3xTF32,3.2,3.38867,5.59241,52,4096,fermix library benchmark
+16,256,fPEPS,,14.4,144,10.0,mixed,14,14.3853,144.053,72.7564,2048,this work
+16,256,fPEPS,HOTRG steps,8.74,16.5,1.89,FP32,9.7,8.73783,16.4803,19.5,2048,this work
+16,256,fPEPS,Final exact contraction,5.62,127,22.7,TF32,15,5.61689,127.46,156,2048,this work
+16,256,fPEPS (trans),,44.6,554,12.4,mixed,14,44.6157,553.932,87.2579,2048,this work
+16,256,fPEPS (trans),HOTRG steps,22.6,43.9,1.95,FP32,10,22.5601,43.946,19.5,2048,this work
+16,256,fPEPS (trans),Final exact contraction,22.1,510,23.0,TF32,15,22.1356,509.838,156,2048,this work
+16,256,Bottleneck CNN,,57.1,2316,40.6,TF32,26,57.093,2315.79,156,8192,this work
+16,256,Normal CNN,,16.0,609,38.1,TF32,24,15.992,609.295,156,32768,this work
+32,1024,Determinant,,128,716,5.61,3xTF32,11,127.539,715.828,52,256,fermix library benchmark
+32,1024,Pfaffian,,109,358,3.27,3xTF32,6.3,109.492,357.914,52,256,fermix library benchmark
+32,1024,fPEPS,,51.7,349,6.75,mixed,14,51.6913,349.09,49.6233,1024,this work
+32,1024,fPEPS,HOTRG steps,40.3,76.9,1.91,FP32,9.8,40.2581,76.907,19.5,1024,this work
+32,1024,fPEPS,Final exact contraction,11.4,272,23.8,TF32,15,11.4106,271.731,156,1024,this work
+32,1024,fPEPS (trans),,223,2438,10.9,mixed,15,222.907,2438.23,74.6719,1024,this work
+32,1024,fPEPS (trans),HOTRG steps,134,264,1.96,FP32,10,134.318,263.695,19.5,1024,this work
+32,1024,fPEPS (trans),Final exact contraction,89.9,2174,24.2,TF32,15,89.9083,2173.84,156,1024,this work
+32,1024,Bottleneck CNN,,219,9263,42.3,TF32,27,218.752,9263.15,156,2048,this work
+32,1024,Normal CNN,,52.4,2437,46.5,TF32,30,52.442,2437.18,156,8192,this work
+64,4096,Determinant,,6469,4.58e4,7.08,3xTF32,14,6468.75,45813,52,32,fermix library benchmark
+64,4096,Pfaffian,,5281,2.29e4,4.34,3xTF32,8.3,5281.25,22906.5,52,32,fermix library benchmark
+64,4096,fPEPS,,194,892,4.60,mixed,13,193.867,891.698,35.9947,512,this work
+64,4096,fPEPS,HOTRG steps,171,330,1.93,FP32,9.9,170.568,329.611,19.5,512,this work
+64,4096,fPEPS,Final exact contraction,23.4,560,23.9,TF32,15,23.4109,560.277,156,512,this work
+64,4096,fPEPS (trans),,1093,1.04e4,9.49,mixed,15,1093.49,10374.6,65.1639,64,this work
+64,4096,fPEPS (trans),HOTRG steps,735,1407,1.91,FP32,9.8,735.154,1406.59,19.5,64,this work
+64,4096,fPEPS (trans),Final exact contraction,365,8964,24.6,TF32,16,364.876,8964.43,156,64,this work
+64,4096,Bottleneck CNN,,868,3.71e4,42.7,TF32,27,867.532,37052.6,156,512,this work
+64,4096,Normal CNN,,206,9749,47.4,TF32,30,205.798,9748.73,156,4096,this work

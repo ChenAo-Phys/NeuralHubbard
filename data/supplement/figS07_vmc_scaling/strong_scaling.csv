@@ -1,0 +1,11 @@
+# Fig. S7 (strong scaling): wall-clock time of one VMC optimization step of the 16x16 NN-fPEPS, U/t = 8, t'/t = -0.2, 1/8 doping
+# Perlmutter (NERSC), 4 NVIDIA A100-SXM4-80GB per node, NCCL over the Slingshot network; N_s = 8192 samples
+# t_sampling_s ... t_total_s: means over the n_timed_steps timed steps, as plotted; t_total_s also contains t_update_s
+# (parameter update, not plotted); t_total_std_s: standard deviation of the step time over the timed steps (not plotted)
+# F_over_t_PFLOPs: aggregate throughput over all GPUs; MFU_percent: model FLOPs utilization as defined in the supplement; both as plotted
+nodes,gpus,Ns,samples_per_gpu,t_sampling_s,t_Eloc_s,t_jacobian_s,t_solver_s,t_total_s,F_over_t_PFLOPs,MFU_percent,t_update_s,t_total_std_s,n_timed_steps
+8,32,8192,256,129.6,255.0,1.95,1.92,388.5,0.738,18.3,0.040,3.65,10
+16,64,8192,128,65.1,127.8,0.98,1.31,195.3,1.47,18.2,0.043,2.39,10
+32,128,8192,64,34.2,64.0,0.49,1.06,99.8,2.87,17.8,0.052,1.04,20
+64,256,8192,32,18.5,32.1,0.26,1.01,51.9,5.52,17.1,0.061,0.48,20
+128,512,8192,16,10.6,16.2,0.14,0.97,28.0,10.2,15.9,0.086,0.38,20

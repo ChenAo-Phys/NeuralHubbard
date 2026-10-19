@@ -1,0 +1,56 @@
+# Pinned environment: Linux, Python 3.12, NVIDIA A100 or newer GPU with driver >= 580 (CUDA 13).
+# Installation: see README.md.
+
+# JAX with CUDA 13
+jax[cuda13]==0.11.1
+jaxlib==0.11.1
+jax-cuda13-plugin==0.11.1  # keep no other jax-cuda* plugin installed
+jax-cuda13-pjrt==0.11.1
+nvidia-cublas==13.6.1.10
+nvidia-cuda-cccl==13.3.3.4.1
+nvidia-cuda-crt==13.3.73
+nvidia-cuda-cupti==13.3.75
+nvidia-cuda-nvcc==13.3.73
+nvidia-cuda-nvrtc==13.3.33
+nvidia-cuda-runtime==13.3.29
+nvidia-cudnn-cu13==9.24.0.43
+nvidia-cufft==12.3.0.29
+nvidia-cusolver==12.2.6.9
+nvidia-cusparse==12.8.2.51
+nvidia-nccl-cu13==2.29.2
+nvidia-nvjitlink==13.3.33
+nvidia-nvshmem-cu13==3.7.2
+nvidia-nvvm==13.3.73
+
+# Numerics and variational Monte Carlo
+numpy==2.3.5
+scipy==1.17.0
+equinox==0.13.8
+einops==0.8.2
+quantax==0.4.0
+lineax==0.1.0
+lrux==0.2.0
+fermix==0.1.0
+
+# Fermionic tensor networks (NN-fPEPS)
+autoray==0.11.0
+cotengra==0.7.5
+symmray==0.4.0
+quimb==1.15.0
+
+# Figures and tools
+matplotlib==3.10.9
+odrpack==0.6.1  # zero-variance extrapolation (Fig. S11)
+
+# Transitive dependencies
+ml_dtypes==0.5.4
+opt_einsum==3.4.0
+jaxtyping==0.3.7
+wadler_lindig==0.1.7
+typing_extensions==4.15.0
+numba==0.63.1
+llvmlite==0.46.0
+cytoolz==1.1.0
+toolz==1.1.0
+psutil==7.2.1
+tqdm==4.67.1

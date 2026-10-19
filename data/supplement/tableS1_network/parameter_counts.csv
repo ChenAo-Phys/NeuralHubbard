@@ -1,0 +1,20 @@
+# Table S1: parameter counts of the released weights (weights/<state>.eqx) and of the benchmark states of Figs. S4 and S5
+# N_p = number of float32 parameters in the checkpoint = N_p_cnn + head + W + scalars + padding
+# N_p_cnn = embedding + conv_weights + conv_biases (16 residual blocks); W = pairing weights (N x 64 BCS, 3 x N x 32 Pfaffian)
+# scalars: envelope decay theta (both backflows) and nearest-neighbor d-wave amplitude (BCS only)
+# padding: zero-valued, unused parameters that round N_p up to a multiple of 4096
+# benchmark_figS5_nnfpeps uses a per-site embedding (512 x 4 x 8 x 8); the production NN-fPEPS shares it over sites (512 x 4)
+state,ansatz,L,N_p_cnn,embedding,conv_weights,conv_biases,head,W,scalars,padding,N_p
+tp0_L16_bcs,bcs,16,1181888,256,1179648,1984,8192,16384,2,1854,1208320
+tp0_L16_pfaffian,pfaffian,16,1181952,256,1179648,2048,0,24576,1,1791,1208320
+tp0_L16_nnfpeps,nnfpeps,16,4470784,2048,4456448,12288,0,0,0,0,4470784
+tp0_L32_bcs,bcs,32,1181888,256,1179648,1984,8192,65536,2,1854,1257472
+tp0_L32_nnfpeps,nnfpeps,32,4470784,2048,4456448,12288,0,0,0,0,4470784
+tpm02_L16_pfaffian,pfaffian,16,1181952,256,1179648,2048,0,24576,1,1791,1208320
+tpm02_L16_nnfpeps,nnfpeps,16,4470784,2048,4456448,12288,0,0,0,0,4470784
+tpm02_L24_pfaffian,pfaffian,24,1181952,256,1179648,2048,0,55296,1,3839,1241088
+tpm02_L32_pfaffian,pfaffian,32,1181952,256,1179648,2048,0,98304,1,1791,1282048
+tpm02_L32_nnfpeps,nnfpeps,32,4470784,2048,4456448,12288,0,0,0,0,4470784
+benchmark_figS4_bcs,bcs,8,1181888,256,1179648,1984,8192,4096,2,1854,1196032
+benchmark_figS5_pfaffian,pfaffian,8,1181952,256,1179648,2048,0,6144,1,3839,1191936
+benchmark_figS5_nnfpeps,nnfpeps,8,4599808,131072,4456448,12288,0,0,0,0,4599808

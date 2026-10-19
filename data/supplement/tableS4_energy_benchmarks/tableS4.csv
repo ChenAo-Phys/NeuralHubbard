@@ -1,0 +1,32 @@
+tprime,lattice,Lx,Ly,ansatz,origin,citation_key,E_unprojected,var_unprojected,E_projected,var_projected,training_average,bold,extrapolation,data_unprojected,data_projected,weights,note
+0,16x4,16,4,Transformer det backflow,literature,Gu_NC26_NQS-Hubbard,-0.76298,,,,,,0,,,,
+0,16x4,16,4,ACE (det backflow),literature,Gu_PRX-Intelligence_SCALE,-0.76464(1),,-0.76623(1),,,,0,,,,
+0,16x4,16,4,NNBF (det backflow),literature,Loehr_arxiv25_NNBF,,,-0.766073(6),,,,0,,,,
+0,16x4,16,4,NN-fPEPS,this work,,-0.76481,0.017,-0.766455(14),0.00555(9),E_unprojected;var_unprojected;var_projected,E_projected;var_projected,0,training_traces/tp0_16x4_nnfpeps_unprojected.csv,energy_series/tp0_16x4_nnfpeps.npz,tp0_16x4_nnfpeps,the paper marks var_projected with a dagger; the value is the measurement in energy_series
+0,16x4,16,4,NN-fPEPS (extrapolated),this work,,,,-0.76722(6),,,,1,,../figS11_zero_variance_extrapolation/grid.csv,,zero-variance extrapolation of a separate NN-fPEPS with N_p ~ 38M (SM Sec. VII A); weights not released
+0,16x16,16,16,Transformer det backflow,literature,Gu_NC26_NQS-Hubbard,-0.7563,,,,,,0,,,,
+0,16x16,16,16,HFPS,literature,Roth_arxiv25_HubbardSC,,,-0.7515(1),0.0638,,,0,,,,
+0,16x16,16,16,SCALE (det backflow),literature,Gu_PRX-Intelligence_SCALE,-0.7529,,,,,,0,,,,
+0,16x16,16,16,ACE (det backflow),literature,Gu_PRX-Intelligence_SCALE,-0.7573,,,,,,0,,,,
+0,16x16,16,16,VAFQMC,literature,Sorella_PRB23_VAFQMC;Wu_Science24_Vscore,-0.75865(3),0.0059(8),,,,var_unprojected,0,,,,
+0,16x16,16,16,fPEPS (D = 16),this work,,-0.7545(15),,,,,,0,,,,pure fPEPS simple-update state (SM Sec. VI); data not included
+0,16x16,16,16,BCS backflow,this work,,-0.75772(1),0.0308(6),-0.75878(2),0.0255(20),,E_projected,0,energy_series/tp0_L16_bcs_unprojected.npz,energy_series/tp0_L16_bcs.npz,tp0_L16_bcs,
+0,16x16,16,16,Pfaffian backflow,this work,,-0.75686(2),0.0337(5),-0.75813(1),0.0259(2),,,0,energy_series/tp0_L16_pfaffian_unprojected.npz,energy_series/tp0_L16_pfaffian.npz,tp0_L16_pfaffian,
+0,16x16,16,16,NN-fPEPS,this work,,-0.75560(4),0.0379(14),-0.75851(2),0.0256(6),,,0,energy_series/tp0_L16_nnfpeps_unprojected.npz,energy_series/tp0_L16_nnfpeps.npz,tp0_L16_nnfpeps,
+0,16x16,16,16,fPEPS (extrapolated),this work,,-0.7602(14),,,,,,1,,,,pure fPEPS simple-update state (SM Sec. VI); data not included
+0,32x32,32,32,SCALE (det backflow),literature,Gu_PRX-Intelligence_SCALE,-0.7501,,,,,,0,,,,
+0,32x32,32,32,BCS backflow,this work,,-0.75490,0.067,-0.75617(1),0.046(10),E_unprojected;var_unprojected,,0,training_traces/tp0_L32_bcs_unprojected.csv,energy_series/tp0_L32_bcs.npz,tp0_L32_bcs,
+0,32x32,32,32,NN-fPEPS,this work,,-0.75511,0.054,-0.75677(1),0.0346(4),E_unprojected;var_unprojected,E_projected;var_projected,0,training_traces/tp0_L32_nnfpeps_unprojected.csv,energy_series/tp0_L32_nnfpeps.npz,tp0_L32_nnfpeps,
+-0.2,12x12,12,12,Transformer det backflow,literature,Gu_NC26_NQS-Hubbard,-0.7414,,,,,,0,,,,
+-0.2,12x12,12,12,BCS backflow,literature,Rende_arxiv26_SBP,,,-0.74425(1),0.035(1),,E_projected;var_projected,0,,,,
+-0.2,16x16,16,16,HFPS,literature,Roth_arxiv25_HubbardSC,,,-0.7360(1),0.0762,,,0,,,,
+-0.2,16x16,16,16,SCALE (det backflow),literature,Gu_PRX-Intelligence_SCALE,-0.7373,,,,,,0,,,,
+-0.2,16x16,16,16,ACE (det backflow),literature,Gu_PRX-Intelligence_SCALE,-0.7430,,,,,,0,,,,
+-0.2,16x16,16,16,BCS backflow,literature,Rende_arxiv26_SBP,,,-0.74411(1),0.037(1),,,0,,,,
+-0.2,16x16,16,16,Pfaffian backflow,this work,,-0.74372(1),0.0346(5),-0.74533(1),0.0272(5),,E_projected;var_projected,0,energy_series/tpm02_L16_pfaffian_unprojected.npz,energy_series/tpm02_L16_pfaffian.npz,tpm02_L16_pfaffian,
+-0.2,16x16,16,16,NN-fPEPS,this work,,-0.74144(4),0.0474(8),-0.74467(2),0.0367(31),,,0,energy_series/tpm02_L16_nnfpeps_unprojected.npz,energy_series/tpm02_L16_nnfpeps.npz,tpm02_L16_nnfpeps,
+-0.2,20x20,20,20,BCS backflow,literature,Rende_arxiv26_SBP,,,-0.74382(1),0.041(1),,E_projected;var_projected,0,,,,
+-0.2,24x24,24,24,BCS backflow,literature,Rende_arxiv26_SBP,,,-0.74397(1),0.054(1),,,0,,,,
+-0.2,24x24,24,24,Pfaffian backflow,this work,,-0.74457(2),0.0358(4),-0.74585(1),0.0257(3),,E_projected;var_projected,0,energy_series/tpm02_L24_pfaffian_unprojected.npz,energy_series/tpm02_L24_pfaffian.npz,tpm02_L24_pfaffian,
+-0.2,32x32,32,32,Pfaffian backflow,this work,,-0.74453,0.048,-0.74569(1),0.0294(5),E_unprojected;var_unprojected,E_projected;var_projected,0,training_traces/tpm02_L32_pfaffian_unprojected.csv,energy_series/tpm02_L32_pfaffian.npz,tpm02_L32_pfaffian,
+-0.2,32x32,32,32,NN-fPEPS,this work,,-0.74032,0.081,-0.74257(2),0.0502(7),E_unprojected;var_unprojected,,0,training_traces/tpm02_L32_nnfpeps_unprojected.csv,energy_series/tpm02_L32_nnfpeps.npz,tpm02_L32_nnfpeps,

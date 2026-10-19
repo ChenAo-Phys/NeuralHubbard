@@ -1,0 +1,8 @@
+# Fig. S6: wall-clock time per amplitude in microseconds on one NVIDIA A100-SXM4-80GB GPU, L x L lattice, N = L^2
+# Same values as the Determinant, Pfaffian, fPEPS and fPEPS (trans) rows of Table S3 (data/supplement/tableS3_amplitude_cost)
+# fPEPS: D = chi = 4 at half filling; fpeps_trans: translation-restored contraction covering all L^2 translations in one call
+L,N,determinant_us,pfaffian_us,fpeps_us,fpeps_trans_us
+8,64,0.293,0.322,4.24,8.32
+16,256,3.64,3.39,14.4,44.6
+32,1024,128,109,51.7,223
+64,4096,6469,5281,194,1093

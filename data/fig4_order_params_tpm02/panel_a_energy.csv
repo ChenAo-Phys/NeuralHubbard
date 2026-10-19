@@ -1,0 +1,11 @@
+method,origin,reference,L,N,E_per_site,E_per_site_err,VarE_per_site,VarE_per_site_err,state,plotted,err_drawn
+ACE,literature,"Gu_PRX-Intelligence_SCALE, Table I (PBC, without symmetry projection)",16,256,-0.743,,,,,1,0
+SCALE,literature,"Gu_PRX-Intelligence_SCALE, Table I (PBC, without symmetry projection)",16,256,-0.7373,,,,,1,0
+HFPS,literature,"Roth_arxiv25_HubbardSC (arXiv:2511.07566), Table V, half-filled stripe + SC",16,256,-0.736,0.0001,,,,1,0
+NN-fPEPS,this work,,16,256,-0.74467046875,2.1e-05,0.0367,3.1e-03,tpm02_L16_nnfpeps,1,0
+NN-fPEPS,this work,,32,1024,-0.742568,1.7e-05,0.0502,6.7e-04,tpm02_L32_nnfpeps,1,0
+BCS backflow,literature,"Rende_arxiv26_SBP (arXiv:2608.12465), Table I, C4v projected",16,256,-0.74411,0.00001,0.037,0.001,,1,0
+BCS backflow,literature,"Rende_arxiv26_SBP (arXiv:2608.12465), Table I, C4v projected",24,576,-0.74397,0.00001,0.054,0.001,,1,0
+Pfaffian backflow,this work,,16,256,-0.745332421875,1.0e-05,0.0272,5.4e-04,tpm02_L16_pfaffian,1,0
+Pfaffian backflow,this work,,24,576,-0.745849,9.2e-06,0.0257,2.9e-04,tpm02_L24_pfaffian,1,0
+Pfaffian backflow,this work,,32,1024,-0.745686,7.2e-06,0.0294,5.0e-04,tpm02_L32_pfaffian,1,0

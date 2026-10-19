@@ -1,0 +1,4 @@
+ansatz,data_origin,observable,fit_form,L_used,intercept,intercept_err,intercept_err_drawn,slope,chi2,dof,Delta_SC_TDL,Delta_SC_TDL_err,Delta_SC_TDL_upper_1sigma,plotted
+BCS backflow,this work,Delta_SC^2,a + b/L^1,16 32,1.4631e-03,5.97e-05,5.97e-05,-1.7481e-03,0,0,0.0383,0.0008,0.0390,1
+BCS backflow,this work,M2_str,a + b/L^2,16 32,-2.7833e-04,5.43e-06,5.43e-06,2.4815e+00,0,0,,,,1
+NN-fPEPS,this work,M2_str,a + b/L^1,16 32,8.2190e-03,1.84e-05,1.84e-05,1.0640e-01,0,0,,,,1

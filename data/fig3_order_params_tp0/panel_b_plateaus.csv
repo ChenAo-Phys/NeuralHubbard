@@ -1,0 +1,4 @@
+ansatz,origin,state,r_max,n_vectors,Delta_SC2,Delta_SC,plateau_drawn
+BCS backflow,this work,tp0_L16_bcs_step3999,5.656854,159,0.001353838830254972,0.036795,1
+Pfaffian backflow,this work,tp0_L16_pfaffian,5.656854,159,0.0012717393692582846,0.035661,1
+NN-fPEPS,this work,tp0_L16_nnfpeps,5.656854,159,1.9260192857473157e-05,0.004389,0

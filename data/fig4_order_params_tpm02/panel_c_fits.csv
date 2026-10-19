@@ -1,0 +1,9 @@
+ansatz,data_origin,observable,fit_form,L_used,intercept,intercept_err,intercept_err_drawn,slope,chi2,dof,Delta_SC_TDL,Delta_SC_TDL_err,Delta_SC_TDL_upper_1sigma,plotted
+BCS backflow,"Rende_arxiv26_SBP, Fig. 4 inset (digitized)",Delta_SC^2,a + b/L^1,12 16 20 24,3.7663e-04,1.49e-04,1.49e-04,1.0677e-02,0.467,2,0.0194,0.0038,0.0229,1
+BCS backflow,"Rende_arxiv26_SBP, Fig. 4 inset (digitized); their own extrapolation, quoted as 0.022(1)",Delta_SC,a + b/L^1 (unweighted least squares),12 16 20 24,2.2309e-02,,,1.5938e-01,,2,,,,0
+BCS backflow,"Rende_arxiv26_SBP (12x12 table, 24x24 Fig. 5)",M2_str,a + b/L^2,12 24,-1.4133e-04,4.00e-05,4.00e-05,1.8209e+00,0,0,,,,1
+Pfaffian backflow,this work,Delta_SC^2,a + b/L^1,16 24 32,-4.1336e-05,3.10e-05,7.66e-05,7.4251e-03,6.13,1,,,0.0059,1
+Pfaffian backflow,this work,Delta_SC^2,a + b/L^1,24 32,1.0307e-04,6.60e-05,6.60e-05,3.5761e-03,0,0,0.0102,0.0033,0.0130,0
+Pfaffian backflow,this work,M2_str,a + b/L^1,16 24 32,6.9631e-03,1.20e-05,3.55e-04,7.5221e-02,875,1,,,,1
+NN-fPEPS,this work,Delta_SC^2,a + b/L^1,16 32,4.5576e-05,2.94e-05,2.94e-05,2.8929e-03,0,0,0.0068,0.0022,0.0087,1
+NN-fPEPS,this work,M2_str,a + b/L^1,16 32,9.9780e-03,2.38e-05,2.38e-05,6.0832e-02,0,0,,,,1

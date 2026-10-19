@@ -1,0 +1,4 @@
+ansatz,origin,state,r_max,n_vectors,Delta_SC2,Delta_SC,plateau_drawn
+BCS backflow,digitized from Rende et al. (arXiv:2608.12465) Fig. 4 (multiplicity-weighted shell average),,5.656854,159,0.0010444188805031444,0.032317,1
+Pfaffian backflow,this work,tpm02_L16_pfaffian,5.656854,159,0.00043751270277425647,0.020917,1
+NN-fPEPS,this work,tpm02_L16_nnfpeps,5.656854,159,0.00022639053349848837,0.015046,1

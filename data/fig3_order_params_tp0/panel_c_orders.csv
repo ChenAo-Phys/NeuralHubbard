@@ -1,0 +1,6 @@
+ansatz,origin,reference,L,inv_L,Delta_SC,Delta_SC_err,Delta_SC2,Delta_SC2_err,M2_str,M2_str_err,q,Delta_plotted,Delta_err_drawn,M2_plotted,state
+NN-fPEPS,this work,,16,0.062500,0.004389,0.001152,1.92633e-05,1.01e-05,0.014869,4e-06,pi/8,0,0,1,tp0_L16_nnfpeps
+NN-fPEPS,this work,,32,0.031250,,,,,0.011544,9e-06,pi/8,0,0,1,tp0_L32_nnfpeps
+BCS backflow,this work,,16,0.062500,0.036795,0.000156,1.35387e-03,1.15e-05,0.009415,3e-06,pi/8,1,0,1,tp0_L16_bcs_step3999
+BCS backflow,this work,,32,0.031250,0.03753,0.00039,1.40850e-03,2.93e-05,0.002145,4e-06,pi/8,1,0,1,tp0_L32_bcs
+Pfaffian backflow,this work,,16,0.062500,0.035661,0.000238,1.27171e-03,1.70e-05,0.010178,6e-06,pi/8,1,0,1,tp0_L16_pfaffian

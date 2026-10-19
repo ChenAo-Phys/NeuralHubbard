@@ -1,0 +1,11 @@
+method,origin,reference,L,N,E_per_site,E_per_site_err,VarE_per_site,VarE_per_site_err,state,plotted,err_drawn
+ACE,literature,"Gu_PRX-Intelligence_SCALE, Table I (PBC, without symmetry projection)",16,256,-0.7573,,,,,1,0
+SCALE,literature,"Gu_PRX-Intelligence_SCALE, Table I (PBC, without symmetry projection)",16,256,-0.7529,,,,,1,0
+SCALE,literature,"Gu_PRX-Intelligence_SCALE, main text (32x32 PBC, without symmetry projection)",32,1024,-0.7501,,,,,1,0
+HFPS,literature,"Roth_arxiv25_HubbardSC (arXiv:2511.07566), Table V, filled stripe",16,256,-0.7515,0.0001,,,,1,0
+PEPS (extrapolated),this work,"pure fPEPS simple update with PBC, bond-dimension extrapolation (SM Sec. VI)",16,256,-0.7602,0.0014,,,,1,1
+NN-fPEPS,this work,,16,256,-0.758512421875,1.6e-05,0.0256,6.2e-04,tp0_L16_nnfpeps,1,0
+NN-fPEPS,this work,,32,1024,-0.756771484375,1.3e-05,0.0346,4.4e-04,tp0_L32_nnfpeps,1,0
+BCS backflow,this work,,16,256,-0.7587780078125,2.2e-05,0.0255,2.0e-03,tp0_L16_bcs,1,0
+BCS backflow,this work,,32,1024,-0.756167,1.1e-05,0.0460,9.6e-03,tp0_L32_bcs,1,0
+Pfaffian backflow,this work,,16,256,-0.75812998046875,6.4e-06,0.0259,2.1e-04,tp0_L16_pfaffian,1,0

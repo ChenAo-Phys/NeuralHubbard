@@ -1,0 +1,20 @@
+# Fig. S5: Cholesky (MinSR) solver x = A^T (A A^T + lambda)^(-1) b in FP64 on the same systems as krylov_iterations.csv
+# t_solve_s: mean wall-clock time of repeated solves; it does not depend on lambda
+# lambda: shift that gives eta = ||A x - b|| / ||b|| = 0.01, mean over groups; xnorm = ||x|| at that lambda (mean, sem over groups)
+# lambda_source: spectrum = from the eigendecomposition of A A^T per group; lambda_scan = log-log interpolated from direct
+# solves over a lambda grid, averaged over the groups before interpolating (xnorm_sem not computed, set to 0, no error bar)
+# extrapolated = 1: the FP64 kernel does not fit in GPU memory at N_s = 65536; the time is the power law
+# t(32768) * 2^p (p = 0.99 for nnfpeps, 1.03 for pfaffian, fitted to the measured times), drawn as a cross
+ansatz,Ns,t_solve_s,extrapolated,eta,lambda,xnorm,xnorm_sem,ngroups,lambda_source
+pfaffian,2048,0.1626,0,0.01,0.00010199943472496701,11.886026790380315,0.13514157021448134,4,spectrum
+pfaffian,4096,0.3457,0,0.01,3.1890869666291666e-05,21.239592896895896,0.1718920093755936,4,spectrum
+pfaffian,8192,0.6902,0,0.01,9.932727236994668e-06,37.632095374470175,0.25162219954955456,4,spectrum
+pfaffian,16384,1.3926,0,0.01,3.002460714314305e-06,67.42555997409067,0.10875662441467746,4,spectrum
+pfaffian,32768,3.298,0,0.01,8.881698194642361e-07,121.8552195127378,0.0,2,lambda_scan
+pfaffian,65536,6.734595981164648,1,,,,,,
+nnfpeps,2048,0.602,0,0.01,7.672028273033614e-05,12.46767856929747,0.09821950306689152,4,spectrum
+nnfpeps,4096,1.312,0,0.01,2.526935940275389e-05,21.683316253939896,0.075217167724854,4,spectrum
+nnfpeps,8192,2.722,0,0.01,8.613570555942038e-06,37.0797364039153,0.09449367354164691,4,spectrum
+nnfpeps,16384,4.908,0,0.01,2.956068419516293e-06,62.70773907097271,0.1821800440664596,4,spectrum
+nnfpeps,32768,9.701,0,0.01,9.975425622794171e-07,106.56553533371466,0.0,2,lambda_scan
+nnfpeps,65536,19.26798059646937,1,,,,,,
