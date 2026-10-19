@@ -65,9 +65,8 @@ python code/measure_orderparams.py --state tpm02_L16_pfaffian --out runs/tpm02_L
 python code/train_pfaffian_16x16_tpm02.py --outdir runs/stage1
 python code/train_pfaffian_16x16_tpm02.py --symm --init runs/stage1/params_4999.eqx --outdir runs/stage2
 
-# figures (written to code/plots/output/) and our rows of Table S4
+# figures (written to code/plots/output/)
 python code/plots/order_params.py
-python data/supplement/tableS4_energy_benchmarks/recompute_tableS4.py
 ```
 
 [code/README.md](code/README.md) documents all scripts and options, including multi-GPU runs.

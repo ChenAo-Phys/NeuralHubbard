@@ -1,5 +1,6 @@
 tprime,lattice,Lx,Ly,ansatz,origin,citation_key,E_unprojected,var_unprojected,E_projected,var_projected,training_average,bold,extrapolation,data_unprojected,data_projected,weights,note
 0,16x4,16,4,Transformer det backflow,literature,Gu_NC26_NQS-Hubbard,-0.76298,,,,,,0,,,,
+0,16x4,16,4,HFPS,literature,Chen_PNAS26_HFPS,,,-0.76413(3),0.0313,,,0,,,,
 0,16x4,16,4,ACE (det backflow),literature,Gu_PRX-Intelligence_SCALE,-0.76464(1),,-0.76623(1),,,,0,,,,
 0,16x4,16,4,NNBF (det backflow),literature,Loehr_arxiv25_NNBF,,,-0.766073(6),,,,0,,,,
 0,16x4,16,4,NN-fPEPS,this work,,-0.76481,0.017,-0.766455(14),0.00555(9),E_unprojected;var_unprojected;var_projected,E_projected;var_projected,0,training_traces/tp0_16x4_nnfpeps_unprojected.csv,energy_series/tp0_16x4_nnfpeps.npz,tp0_16x4_nnfpeps,the paper marks var_projected with a dagger; the value is the measurement in energy_series
@@ -9,11 +10,11 @@ tprime,lattice,Lx,Ly,ansatz,origin,citation_key,E_unprojected,var_unprojected,E_
 0,16x16,16,16,SCALE (det backflow),literature,Gu_PRX-Intelligence_SCALE,-0.7529,,,,,,0,,,,
 0,16x16,16,16,ACE (det backflow),literature,Gu_PRX-Intelligence_SCALE,-0.7573,,,,,,0,,,,
 0,16x16,16,16,VAFQMC,literature,Sorella_PRB23_VAFQMC;Wu_Science24_Vscore,-0.75865(3),0.0059(8),,,,var_unprojected,0,,,,
-0,16x16,16,16,fPEPS (D = 16),this work,,-0.7545(15),,,,,,0,,,,pure fPEPS simple-update state (SM Sec. VI); data not included
+0,16x16,16,16,fPEPS (D = 16),this work,,-0.7545(15),,,,,,0,../figS09_fpeps_L16_convergence/per_D_estimates.csv,,,pure fPEPS simple-update state (SM Sec. VI); states not released
 0,16x16,16,16,BCS backflow,this work,,-0.75772(1),0.0308(6),-0.75878(2),0.0255(20),,E_projected,0,energy_series/tp0_L16_bcs_unprojected.npz,energy_series/tp0_L16_bcs.npz,tp0_L16_bcs,
 0,16x16,16,16,Pfaffian backflow,this work,,-0.75686(2),0.0337(5),-0.75813(1),0.0259(2),,,0,energy_series/tp0_L16_pfaffian_unprojected.npz,energy_series/tp0_L16_pfaffian.npz,tp0_L16_pfaffian,
 0,16x16,16,16,NN-fPEPS,this work,,-0.75560(4),0.0379(14),-0.75851(2),0.0256(6),,,0,energy_series/tp0_L16_nnfpeps_unprojected.npz,energy_series/tp0_L16_nnfpeps.npz,tp0_L16_nnfpeps,
-0,16x16,16,16,fPEPS (extrapolated),this work,,-0.7602(14),,,,,,1,,,,pure fPEPS simple-update state (SM Sec. VI); data not included
+0,16x16,16,16,fPEPS (extrapolated),this work,,-0.7602(14),,,,,,1,../figS10_fpeps_L16_w_extrap/extrapolated_energy.csv,,,bootstrap extrapolation of the pure fPEPS in the gauge weight (SM Sec. VI B)
 0,32x32,32,32,SCALE (det backflow),literature,Gu_PRX-Intelligence_SCALE,-0.7501,,,,,,0,,,,
 0,32x32,32,32,BCS backflow,this work,,-0.75490,0.067,-0.75617(1),0.046(10),E_unprojected;var_unprojected,,0,training_traces/tp0_L32_bcs_unprojected.csv,energy_series/tp0_L32_bcs.npz,tp0_L32_bcs,
 0,32x32,32,32,NN-fPEPS,this work,,-0.75511,0.054,-0.75677(1),0.0346(4),E_unprojected;var_unprojected,E_projected;var_projected,0,training_traces/tp0_L32_nnfpeps_unprojected.csv,energy_series/tp0_L32_nnfpeps.npz,tp0_L32_nnfpeps,

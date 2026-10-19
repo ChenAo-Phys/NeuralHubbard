@@ -15,12 +15,13 @@ themselves are in [`images/`](../images/).
 | Fig. S6 | [`supplement/figS06_amplitude_scaling/`](supplement/figS06_amplitude_scaling/) | time per amplitude against N |
 | Table S3 | [`supplement/tableS3_amplitude_cost/`](supplement/tableS3_amplitude_cost/) | time, operation count and MFU of each amplitude component |
 | Fig. S7 | [`supplement/figS07_vmc_scaling/`](supplement/figS07_vmc_scaling/) | weak and strong scaling of one VMC step |
-| Figs. S8-S10 | [`S8`](supplement/figS08_fpeps_cluster_boundary/), [`S9`](supplement/figS09_fpeps_L16_convergence/), [`S10`](supplement/figS10_fpeps_L16_w_extrap/) | pure fPEPS reference: S8 is a schematic, the data of S9 and S10 will be added |
+| Fig. S9 | [`supplement/figS09_fpeps_L16_convergence/`](supplement/figS09_fpeps_L16_convergence/) | pure fPEPS on 16x16 at t' = 0: E/N against chi, r and D |
+| Fig. S10 | [`supplement/figS10_fpeps_L16_w_extrap/`](supplement/figS10_fpeps_L16_w_extrap/) | extrapolation of the pure fPEPS energy in the gauge weight |
 | Fig. S11 | [`supplement/figS11_zero_variance_extrapolation/`](supplement/figS11_zero_variance_extrapolation/) | zero-variance extrapolation on 16x4 |
-| Table S4 | [`supplement/tableS4_energy_benchmarks/`](supplement/tableS4_energy_benchmarks/) | all rows, per-sweep energy series and a recomputation script |
+| Table S4 | [`supplement/tableS4_energy_benchmarks/`](supplement/tableS4_energy_benchmarks/) | all rows, per-sweep energy series and training traces |
 | Figs. S12-S21 | [`supplement/real_space_corr/`](supplement/real_space_corr/) | real-space C_s, C_c and C_p of each projected state, one subfolder per figure |
 
-Figs. 1, 2 and S1-S3 are schematics and Table S2 is text, so they have no data folder.
+Figs. 1, 2, S1-S3 and S8 are schematics and Table S2 is text, so they have no data folder.
 
 ## Conventions
 
